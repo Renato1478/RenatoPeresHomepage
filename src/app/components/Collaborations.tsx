@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import MyTitle from "../@core/components/MyTitle";
 import PaginationButton from "../@core/components/buttons/PaginationButton";
-import Image from "next/image";
 import Link from "next/link";
 
 type CollaborationType = {
@@ -29,14 +28,14 @@ const ArrowTopRightIcon = () => (
   >
     <path
       d="M6.70834 16.3745L16.2917 6.79114"
-      stroke="white"
+      stroke="currentColor"
       stroke-width="1.5"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
     <path
       d="M6.70834 6.79114H16.2917V16.3745"
-      stroke="white"
+      stroke="currentColor"
       stroke-width="1.5"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -106,19 +105,27 @@ export default function Collaborations() {
   const [collaborationToShow, setCollaborationToShow] =
     useState<CollaborationType>(collaborations[0]);
 
+  // setInterval(() => {
+  //   const currentIndex = collaborations.findIndex(
+  //     (c) => c.id === collaborationToShow.id
+  //   );
+  //   const nextCollaboration = collaborations[currentIndex + 1];
+  //   if (nextCollaboration) setCollaborationToShow(nextCollaboration);
+  //   else setCollaborationToShow(collaborations[0]);
+  // }, 6000);
+
   return (
-    <div className="wrapper pt-12">
+    <div className="wrapper pt-32">
       <MyTitle text="Collaborations" />
-      <div className="pt-6">
+      <div className="pt-16">
         {/* Details */}
-        <div className="flex">
-          <Image
+        <div className="h-60 flex">
+          <img
             src={collaborationToShow.image}
             alt={collaborationToShow.title}
-            width={250}
-            height={250}
+            className="h-full"
           />
-          <div className="p-4 text-white bg-purple-600">
+          <div className="pl-8">
             <div className="flex align-middle justify-between">
               <h2 className="text-2xl font-semibold">
                 {collaborationToShow.title}
@@ -127,40 +134,36 @@ export default function Collaborations() {
                 <Link
                   href={collaborationToShow.company.website}
                   target="_blank"
-                  className="flex align-middle gap-x-1"
+                  className="flex align-middle gap-x-1 text-purple-600 hover:text-purple-400 transition-all"
                 >
-                  Company: {collaborationToShow.company.name}
                   <ArrowTopRightIcon />
+                  {collaborationToShow.company.name}
                 </Link>
                 <Link
                   href={collaborationToShow.website}
                   target="_blank"
-                  className="flex align-middle gap-x-1"
+                  className="flex align-middle gap-x-1 text-purple-600 hover:text-purple-400 transition-all"
                 >
-                  Visit website
                   <ArrowTopRightIcon />
+                  Visit website
                 </Link>
               </div>
             </div>
             <div className="pt-6">
-              <div>
-                <span className="font-semibold">Description:</span>{" "}
-                <span className="text-gray-300">
-                  {collaborationToShow.description}
-                </span>
-              </div>
+              <span className="text-gray-500">
+                {collaborationToShow.description}
+              </span>
               <div className="pt-4">
                 <span className="font-semibold">My collaboration:</span>{" "}
-                <span className="text-gray-300">
+                <span className="text-gray-500">
                   {collaborationToShow.role_description}
                 </span>
               </div>
             </div>
           </div>
-          <div></div>
         </div>
         {/* Pagination */}
-        <div className="flex gap-x-2 pt-4">
+        <div className="flex gap-x-2 pt-6">
           {collaborations.map((collaboration, i) => {
             return (
               <PaginationButton
