@@ -5,7 +5,7 @@ interface Props {
   position?: "start" | "center";
 }
 
-export default function MyTitle({ text, position = "start" }: Props) {
+export default function SectionTitle({ text, position = "start" }: Props) {
   return (
     <div
       className={`flex flex-col w-fit ${

@@ -1,9 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import MyTitle from "../@core/components/MyTitle";
+import SectionTitle from "../@core/components/SectionTitle";
 import PaginationButton from "../@core/components/buttons/PaginationButton";
-import Link from "next/link";
+
+import CustomLink from "../@core/components/CustomLink";
+import { ArrowTopRightIcon } from "../@core/components/icons";
 
 type CollaborationType = {
   id: number;
@@ -17,31 +19,6 @@ type CollaborationType = {
     website: string;
   };
 };
-
-const ArrowTopRightIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="23"
-    height="24"
-    viewBox="0 0 23 24"
-    fill="none"
-  >
-    <path
-      d="M6.70834 16.3745L16.2917 6.79114"
-      stroke="currentColor"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-    <path
-      d="M6.70834 6.79114H16.2917V16.3745"
-      stroke="currentColor"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-  </svg>
-);
 
 const collaborations: CollaborationType[] = [
   {
@@ -116,7 +93,7 @@ export default function Collaborations() {
 
   return (
     <div className="wrapper pt-32">
-      <MyTitle text="Collaborations" />
+      <SectionTitle text="Collaborations" />
       <div className="pt-16">
         {/* Details */}
         <div className="h-60 flex">
@@ -131,22 +108,17 @@ export default function Collaborations() {
                 {collaborationToShow.title}
               </h2>
               <div className="flex align-middle gap-x-8">
-                <Link
+                <CustomLink
                   href={collaborationToShow.company.website}
                   target="_blank"
-                  className="flex align-middle gap-x-1 text-purple-600 hover:text-purple-400 transition-all"
                 >
                   <ArrowTopRightIcon />
                   {collaborationToShow.company.name}
-                </Link>
-                <Link
-                  href={collaborationToShow.website}
-                  target="_blank"
-                  className="flex align-middle gap-x-1 text-purple-600 hover:text-purple-400 transition-all"
-                >
+                </CustomLink>
+                <CustomLink href={collaborationToShow.website} target="_blank">
                   <ArrowTopRightIcon />
                   Visit website
-                </Link>
+                </CustomLink>
               </div>
             </div>
             <div className="pt-6">

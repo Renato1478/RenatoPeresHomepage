@@ -245,3 +245,65 @@ export const BriefCaseIcon = ({ width }: Props) => (
     <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
   </svg>
 );
+
+export const ArrowTopRightIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="23"
+    height="24"
+    viewBox="0 0 23 24"
+    fill="none"
+  >
+    <path
+      d="M6.70834 16.3745L16.2917 6.79114"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M6.70834 6.79114H16.2917V16.3745"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);
+
+export const MapMarkerIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="20"
+    viewBox="0 0 24 25"
+    fill="none"
+  >
+    <g clip-path="url(#clip0_382_146)">
+      <path
+        d="M21 10.8252C21 17.8252 12 23.8252 12 23.8252C12 23.8252 3 17.8252 3 10.8252C3 8.43825 3.94821 6.14906 5.63604 4.46123C7.32387 2.77341 9.61305 1.8252 12 1.8252C14.3869 1.8252 16.6761 2.77341 18.364 4.46123C20.0518 6.14906 21 8.43825 21 10.8252Z"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M12 13.8252C13.6569 13.8252 15 12.482 15 10.8252C15 9.16834 13.6569 7.8252 12 7.8252C10.3431 7.8252 9 9.16834 9 10.8252C9 12.482 10.3431 13.8252 12 13.8252Z"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_382_146">
+        <rect
+          width="24"
+          height="24"
+          fill="white"
+          transform="translate(0 0.825195)"
+        />
+      </clipPath>
+    </defs>
+  </svg>
+);

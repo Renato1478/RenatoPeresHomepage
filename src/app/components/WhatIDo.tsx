@@ -1,5 +1,5 @@
 import React from "react";
-import MyTitle from "../@core/components/MyTitle";
+import SectionTitle from "../@core/components/SectionTitle";
 
 const DesignIcon = () => (
   <svg
@@ -114,7 +114,7 @@ const Backend = () => (
 export default function WhatIDo() {
   return (
     <div className="wrapper pt-32">
-      <MyTitle text="What I do?" position="center" />
+      <SectionTitle text="What I do?" position="center" />
       {/* Cards */}
       <div className="flex pt-12 justify-center gap-x-12">
         {/* Design */}
