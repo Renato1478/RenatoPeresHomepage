@@ -75,7 +75,7 @@ export default function Experiences() {
   );
 
   return (
-    <div className="wrapper pt-32">
+    <div id="s-experiences" className="wrapper pt-32">
       <SectionTitle text="Experiences" />
       <div className="flex pt-16 h-fit">
         {/* Nav */}
@@ -123,7 +123,7 @@ export default function Experiences() {
         {/* Container */}
         <div className="pl-8 w-full">
           <div className="flex align-middle justify-between">
-            <h2 className="text-2xl font-semibold">{experienceToShow.title}</h2>
+            <h2 className="text-2xl">{experienceToShow.title}</h2>
             <div className="flex items-center text-gray-500">
               {experienceToShow.beginning} - {experienceToShow.end || "Present"}
             </div>

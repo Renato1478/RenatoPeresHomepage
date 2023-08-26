@@ -113,7 +113,7 @@ const Backend = () => (
 
 export default function WhatIDo() {
   return (
-    <div className="wrapper pt-32">
+    <div id="s-whatido" className="wrapper pt-32">
       <SectionTitle text="What I do?" position="center" />
       {/* Cards */}
       <div className="flex pt-12 justify-center gap-x-12">

@@ -11,7 +11,7 @@ import SocialMediaButton from "../@core/components/buttons/SocialMediaButton";
 
 export default function Profile() {
   return (
-    <div className="wrapper flex align-middle gap-x-6 pt-4">
+    <div id="s-aboutme" className="wrapper flex align-middle gap-x-6 pt-4">
       <Image
         src={"/images/renato-profile-photo.jpg"}
         alt="Renato Profile Photo"
