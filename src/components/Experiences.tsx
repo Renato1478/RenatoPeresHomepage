@@ -79,11 +79,11 @@ export default function Experiences() {
   );
 
   return (
-    <div id="s-experiences" className="section wrapper pt-32">
+    <div id="s-experiences" className="section wrapper pt-32 max-md:pt-24">
       <SectionTitle text="Experiences" />
-      <div className="flex pt-16 h-fit">
+      <div className="flex pt-16 max-md:pt-12 max-md:flex-col h-fit">
         {/* Nav */}
-        <div className="w-64 min-w-64 border-0 bg-zinc-100">
+        <div className="w-64 max-md:w-full min-w-64 border-0 bg-zinc-100">
           <div className="flex gap-x-2 p-2 px-3 text-zinc-500 bg-gradient-to-r from-zinc-200 from-80% to-purple-200 dark:from-[#1F1435] dark:to-purple-950">
             <BriefCaseIcon width={20} /> Work
           </div>
@@ -127,9 +127,9 @@ export default function Experiences() {
             ))}
         </div>
         {/* Container */}
-        <div className="pl-8 w-full">
+        <div className="pl-8 max-md:pl-0 max-md:pt-6 w-full">
           {/* Header */}
-          <div className="flex align-middle justify-between">
+          <div className="flex max-md:flex-col max-md:gap-y-4 align-middle justify-between">
             <h2 className="text-2xl">{experienceToShow.title}</h2>
             <div className="flex items-center text-zinc-500">
               {experienceToShow.beginning} - {experienceToShow.end || "Present"}

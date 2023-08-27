@@ -4,12 +4,12 @@ import { Backend, DesignIcon, FrontendIcon } from "../@core/components/icons";
 
 export default function WhatIDo() {
   return (
-    <div id="s-whatido" className="section wrapper pt-32">
+    <div id="s-whatido" className="section wrapper pt-32 max-md:pt-24">
       <SectionTitle text="What I do?" position="center" />
       {/* Card List */}
-      <div className="flex pt-12 justify-center gap-x-12">
+      <div className="flex max-md:flex-col pt-12 justify-center gap-x-12">
         {/* Design */}
-        <div className="mt-8 h-60 flex flex-col w-1/3 p-6 border-solid border-2 border-zinc-300 hover:border-purple-400 dark:border-zinc-800 dark:hover:border-purple-400 transition ease-in-out duration-300">
+        <div className="mt-8 max-md:mt-0 h-60 flex flex-col w-1/3 max-md:w-full p-6 border-solid border-2 border-zinc-300 hover:border-purple-400 dark:border-zinc-800 dark:hover:border-purple-400 transition ease-in-out duration-300">
           <div className="flex gap-x-2 align-middle">
             <div className="text-purple-600">
               <DesignIcon />
@@ -29,7 +29,7 @@ export default function WhatIDo() {
           </div>
         </div>
         {/* Frontend */}
-        <div className="flex h-60 flex-col w-1/3 p-6 border-solid border-2 transition ease-in-out border-zinc-300 hover:border-violet-400 dark:border-zinc-800 dark:hover:border-violet-400 duration-300">
+        <div className="flex h-60 max-md:mt-4 flex-col w-1/3 max-md:w-full p-6 border-solid border-2 transition ease-in-out border-zinc-300 hover:border-violet-400 dark:border-zinc-800 dark:hover:border-violet-400 duration-300">
           <div className="flex gap-x-2 align-middle">
             <div className="text-violet-600">
               <FrontendIcon />
@@ -49,7 +49,7 @@ export default function WhatIDo() {
           </div>
         </div>
         {/* Backend */}
-        <div className="mt-8 h-60 flex flex-col w-1/3 p-6 border-solid border-2 transition ease-in-out border-zinc-300 hover:border-red-400 dark:border-zinc-800 dark:hover:border-red-400 duration-300">
+        <div className="mt-8 max-md:mt-4 h-60 flex flex-col w-1/3 max-md:w-full p-6 border-solid border-2 transition ease-in-out border-zinc-300 hover:border-red-400 dark:border-zinc-800 dark:hover:border-red-400 duration-300">
           <div className="flex gap-x-2 align-middle">
             <div className="text-red-400">
               <Backend />

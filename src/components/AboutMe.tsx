@@ -10,41 +10,54 @@ import {
 import SocialMediaButton from "../@core/components/buttons/SocialMediaButton";
 import SectionTitle from "../@core/components/SectionTitle";
 
+const SocialLinksList = () => (
+  <div className="flex pt-4 gap-x-2">
+    <SocialMediaButton href="https://github.com/Renato1478">
+      <GitHubIcon />
+    </SocialMediaButton>
+    <SocialMediaButton href="https://www.behance.net/renatosouza32">
+      <BehanceIcon />
+    </SocialMediaButton>
+    <SocialMediaButton href="https://www.linkedin.com/in/renato-peres-401137179/">
+      <LinkedInIcon />
+    </SocialMediaButton>
+    <SocialMediaButton href="https://discord.gg/USufuNnp">
+      <DiscordIcon />
+    </SocialMediaButton>
+  </div>
+);
+
 export default function Profile() {
   return (
     <div id="s-aboutme" className="section">
-      <div className="wrapper flex align-middle gap-x-6 pt-4">
-        <Image
-          src={"/images/renato-profile-photo.jpg"}
-          alt="Renato Profile Photo"
-          width={200}
-          height={200}
-          className="rounded-full"
-        />
-        <div className="flex flex-col gap-y-2">
-          <div className="text-3xl">
-            Renato{" "}
-            <span className="text-purple-600 dark:text-purple-500 font-semibold">
-              Peres
-            </span>
-          </div>
-          <span>Cyber Magician (Designer / Developer)</span>
-          <div className="flex pt-4 gap-x-2">
-            <SocialMediaButton href="https://github.com/Renato1478">
-              <GitHubIcon />
-            </SocialMediaButton>
-            <SocialMediaButton href="https://www.behance.net/renatosouza32">
-              <BehanceIcon />
-            </SocialMediaButton>
-            <SocialMediaButton href="https://www.linkedin.com/in/renato-peres-401137179/">
-              <LinkedInIcon />
-            </SocialMediaButton>
-            <SocialMediaButton href="https://discord.gg/USufuNnp">
-              <DiscordIcon />
-            </SocialMediaButton>
+      {/* Profile */}
+      <div className="wrapper pt-4">
+        <div className="flex align-middle gap-x-6">
+          <Image
+            src={"/images/renato-profile-photo.jpg"}
+            alt="Renato Profile Photo"
+            width={200}
+            height={200}
+            className="max-md:h-32 max-md:w-32 rounded-full"
+          />
+          <div className="flex flex-col gap-y-2">
+            <div className="text-3xl">
+              Renato{" "}
+              <span className="text-purple-600 dark:text-purple-500 font-semibold">
+                Peres
+              </span>
+            </div>
+            <span>Cyber Magician (Designer / Developer)</span>
+            <div className="max-md:hidden">
+              <SocialLinksList />
+            </div>
           </div>
         </div>
+        <div className="hidden max-md:flex justify-center">
+          <SocialLinksList />
+        </div>
       </div>
+      {/* Content */}
       <div className="wrapper pt-12">
         <SectionTitle text="About me" />
         <div className="pt-8 dark:text-zinc-400">

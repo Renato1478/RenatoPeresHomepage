@@ -16,6 +16,26 @@
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: theme('colors.zinc.950');
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: theme('colors.purple.950');
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.purple.800');
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
@@ -25,18 +45,8 @@ body {
 
 .wrapper {
   width: 100%;
-}
-
-@media (min-width: 640px) {
-  .wrapper {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .wrapper {
-    max-width: 768px;
-  }
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width: 1140px) {

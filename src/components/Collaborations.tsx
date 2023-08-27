@@ -92,18 +92,18 @@ export default function Collaborations() {
   // }, 6000);
 
   return (
-    <div id="s-collaborations" className="section wrapper pt-32">
+    <div id="s-collaborations" className="section wrapper pt-32 max-md:pt-24">
       <SectionTitle text="Collaborations" />
-      <div className="pt-16">
+      <div className="pt-16 max-md:pt-12">
         {/* Details */}
-        <div className="h-60 flex">
+        <div className="h-60 max-md:h-fit flex max-md:flex-col">
           <img
             src={collaborationToShow.image}
             alt={collaborationToShow.title}
             className="h-full box-content border-2 border-zinc-400 dark:border-zinc-800"
           />
-          <div className="pl-8">
-            <div className="flex align-middle justify-between">
+          <div className="pl-8 max-md:pl-0 max-md:pt-6">
+            <div className="flex align-middle justify-between max-md:flex-col max-md:gap-y-4">
               <h2 className="text-2xl">{collaborationToShow.title}</h2>
               <div className="flex align-middle gap-x-8">
                 <CustomLink

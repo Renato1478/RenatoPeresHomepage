@@ -88,12 +88,6 @@ export default function Header() {
   return (
     <nav className="w-full fixed backdrop-blur-md bg-white bg-opacity-75 dark:bg-opacity-5 z-50 dark:bg-zinc-400">
       <div className="wrapper flex justify-between py-4 m-auto">
-        {/* <div className="text-2xl">
-          Renato{" "}
-          <span className="text-purple-600 dark:text-purple-500 font-semibold">
-            Peres
-          </span>
-        </div> */}
         <span className="flex text-purple-600 dark:text-purple-500 font-semibold">
           <svg
             width={"26"}
@@ -122,7 +116,7 @@ export default function Header() {
           <ul className="flex gap-x-8 items-center">
             {sectionLinks.map((sectionLink) => {
               return (
-                <li key={sectionLink.id}>
+                <li className="max-md:hidden" key={sectionLink.id}>
                   <Link
                     id={sectionLink.id}
                     href={sectionLink.href}
@@ -143,7 +137,7 @@ export default function Header() {
             </li>
           </ul>
           <div
-            className="absolute w-4 h-1.5 rounded-full bg-purple-400 transition-all"
+            className="absolute w-4 h-1.5 rounded-full bg-purple-400 max-md:hidden transition-all"
             style={{ left: activeSessionIndicatorXPosition }}
           />
         </div>

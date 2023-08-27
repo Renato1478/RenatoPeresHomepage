@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <div
       id="s-hero"
-      className="dark:text-white section wrapper flex justify-between align-middle pt-48 pb-4"
+      className="dark:text-white section wrapper flex max-md:flex-col justify-between align-middle pt-48 max-md:pt-28 pb-4"
     >
       <div className="flex flex-col align-middle justify-center max-w-lg gap-y-4">
         <div className="text-3xl font-bold">

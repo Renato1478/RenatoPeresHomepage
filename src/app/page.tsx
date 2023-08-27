@@ -22,14 +22,14 @@ export default function Home() {
               style={{ marginRight: "-5px" }}
             >
               <span className="bg-red-400 rounded-full w-3 h-3" />
-              <div className="w-0.5 h-24 bg-red-400" />
+              <div className="w-0.5 h-24 max-md:h-12 bg-red-400" />
             </div>
             <hr className="border-0 h-0.5 bg-gradient-to-l from-red-400 via-transparent to-purple-400" />
             <div
               className="flex flex-col self-start items-center"
               style={{ marginLeft: "-5px" }}
             >
-              <div className="w-0.5 h-24 bg-purple-400" />
+              <div className="w-0.5 h-24 max-md:h-12 bg-purple-400" />
               <span className="bg-purple-400 rounded-full w-3 h-3" />
             </div>
           </div>

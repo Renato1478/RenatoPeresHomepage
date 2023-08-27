@@ -24,7 +24,7 @@ export default function MainIllustration() {
       alt="Renato during the night"
       width={487}
       height={350}
-      className="transition-all"
+      className="max-md:pt-10 max-md:h-68 max-md:w-80 max-md:opacity-75 max-md:ml-auto transition-all"
     />
   );
 }
