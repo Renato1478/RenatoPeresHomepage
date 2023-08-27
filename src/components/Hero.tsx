@@ -1,4 +1,4 @@
-import SpecialButton from "@/app/@core/components/buttons/SpecialButton";
+import SpecialButton from "@/@core/components/buttons/SpecialButton";
 import Image from "next/image";
 
 export default function Hero() {

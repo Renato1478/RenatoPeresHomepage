@@ -102,7 +102,7 @@ export default function Header() {
               </li>
             ))}
             <li>
-              <button className="rounded-md p-2 bg-gradient-to-b bg-purple-600 hover:from-purple-600 hover:to-red-400 transition ease-in-out duration-300">
+              <button className="rounded-md p-2 bg-purple-600 hover:bg-gradient-to-b hover:bg-purple-800 transition ease-in-out duration-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

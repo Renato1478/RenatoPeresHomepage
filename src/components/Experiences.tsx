@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import SectionTitle from "../@core/components/SectionTitle";
-import Link from "next/link";
 import {
   ArrowTopRightIcon,
   BookOpenIcon,
@@ -10,7 +9,6 @@ import {
   MapMarkerIcon,
 } from "../@core/components/icons";
 import CustomLink from "../@core/components/CustomLink";
-import exp from "constants";
 
 type ExperienceProps = {
   id: number;

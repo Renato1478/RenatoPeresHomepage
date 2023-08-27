@@ -1,10 +1,10 @@
-import AboutMe from "./components/AboutMe";
-import Collaborations from "./components/Collaborations";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import WhatIDo from "./components/WhatIDo";
-import Experiences from "./components/Experiences";
+import AboutMe from "../components/AboutMe";
+import Collaborations from "../components/Collaborations";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import WhatIDo from "../components/WhatIDo";
+import Experiences from "../components/Experiences";
 
 export default function Home() {
   return (
