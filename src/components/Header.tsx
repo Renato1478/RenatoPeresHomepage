@@ -88,12 +88,36 @@ export default function Header() {
   return (
     <nav className="w-full fixed backdrop-blur-md bg-white bg-opacity-75 dark:bg-opacity-5 z-50 dark:bg-zinc-400">
       <div className="wrapper flex justify-between py-4 m-auto">
-        <div className="text-2xl">
+        {/* <div className="text-2xl">
           Renato{" "}
           <span className="text-purple-600 dark:text-purple-500 font-semibold">
             Peres
           </span>
-        </div>
+        </div> */}
+        <span className="flex text-purple-600 dark:text-purple-500 font-semibold">
+          <svg
+            width={"26"}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 286.21 353.87"
+          >
+            <g data-name="Layer 2">
+              <g data-name="Layer 1">
+                <path
+                  className="dark:fill-white fill-zing-950"
+                  d="M143.4 61.67q19.2 0 33.11 6.32A48.76 48.76 0 0 1 198 86.19q7.58 11.88 7.58 28.56T198 143.32a46.8 46.8 0 0 1-9.58 10.81l31.94 56.61q28.47-14.09 43.86-39.12 15.66-25.51 15.67-58.89 0-33.86-15.67-59.14t-45-39.44Q189.91 0 148 0h-46.56l34.8 61.67Z"
+                />
+                <path
+                  className="fill-purple-600 dark:fill-purple-500"
+                  d="m286.21 353.87-80.76-143.13-31.95-56.61-52.17-92.46L86.53 0H14.24l88.47 167.83 30.38 57.63 67.69 128.41h85.43z"
+                />
+                <path
+                  className="dark:fill-white fill-zing-950"
+                  d="M0 0v353.87h72.28V137.13L0 0z"
+                />
+              </g>
+            </g>
+          </svg>
+        </span>
         <div className="relative">
           <ul className="flex gap-x-8 items-center">
             {sectionLinks.map((sectionLink) => {
