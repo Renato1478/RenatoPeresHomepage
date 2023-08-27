@@ -8,7 +8,10 @@ import Experiences from "../components/Experiences";
 
 export default function Home() {
   return (
-    <main className="text-zinc-950 bg-gradient-to-b from-white to-zinc-200 dark:text-white  dark:from-zinc-800 dark:to-zinc-950 flex min-h-screen flex-col items-center my-0 mx-auto font-normal">
+    <main
+      className="text-zinc-950 bg-gradient-radial from-white to-zinc-200 dark:text-white dark:to-[#1F1435] dark:from-zinc-950 from-0% flex min-h-screen flex-col items-center my-0 mx-auto font-normal"
+      style={{ backgroundColor: "#000" }}
+    >
       <Header />
       <Hero />
       <div className="wrapper">

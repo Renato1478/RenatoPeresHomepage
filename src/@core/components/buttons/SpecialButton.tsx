@@ -10,11 +10,15 @@ export default function SpecialButton({ children, href, svgIcon }: Props) {
   return (
     <a
       href={href}
-      className="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-purple-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-purple-300 ring-offset-purple-200 hover:ring-offset-purple-300 dark:ring-purple-400 dark:ring-offset-purple-200 dark:hover:ring-offset-purple-400 ease focus:outline-none"
+      target="_blank"
+      className="relative items-center justify-center inline-block p-4 px-5 py-3 overflow-hidden font-medium rounded-lg shadow-2xl group"
     >
-      <span className="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
-      <span className="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
-      <span className="relative z-20 flex items-center text-sm">
+      <span className="absolute top-0 left-0 w-40 h-40 -mt-10 -ml-3 transition-all duration-300 bg-violet-400 rounded-full blur-md ease"></span>
+      <span className="absolute inset-0 w-full h-full transition duration-300 group-hover:rotate-180 ease">
+        <span className="absolute bottom-0 left-0 w-24 h-24 -ml-10 bg-red-400 rounded-full blur-md"></span>
+        <span className="absolute bottom-0 right-0 w-24 h-24 -mr-10 bg-purple-500 rounded-full blur-md"></span>
+      </span>
+      <span className="relative text-white">
         {svgIcon}
         {children}
       </span>

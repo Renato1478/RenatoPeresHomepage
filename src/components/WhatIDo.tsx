@@ -9,7 +9,7 @@ export default function WhatIDo() {
       {/* Card List */}
       <div className="flex pt-12 justify-center gap-x-12">
         {/* Design */}
-        <div className="mt-8 h-60 flex flex-col w-1/3 p-6 border-solid border-2 border-zinc-300 hover:border-purple-400 dark:border-zinc-600 dark:hover:border-purple-400 transition ease-in-out duration-300">
+        <div className="mt-8 h-60 flex flex-col w-1/3 p-6 border-solid border-2 border-zinc-300 hover:border-purple-400 dark:border-zinc-800 dark:hover:border-purple-400 transition ease-in-out duration-300">
           <div className="flex gap-x-2 align-middle">
             <div className="text-purple-600">
               <DesignIcon />
@@ -29,9 +29,11 @@ export default function WhatIDo() {
           </div>
         </div>
         {/* Frontend */}
-        <div className="flex h-60 flex-col w-1/3 p-6 border-solid border-2 transition ease-in-out border-zinc-300 hover:border-red-400 dark:border-zinc-600 dark:hover:border-red-400 duration-300">
+        <div className="flex h-60 flex-col w-1/3 p-6 border-solid border-2 transition ease-in-out border-zinc-300 hover:border-violet-400 dark:border-zinc-800 dark:hover:border-violet-400 duration-300">
           <div className="flex gap-x-2 align-middle">
-            <FrontendIcon />
+            <div className="text-violet-600">
+              <FrontendIcon />
+            </div>
             <h1 className="text-2xl font-semibold">Frontend</h1>
           </div>
           <div className="pt-4">
@@ -47,9 +49,11 @@ export default function WhatIDo() {
           </div>
         </div>
         {/* Backend */}
-        <div className="mt-8 h-60 flex flex-col w-1/3 p-6 border-solid border-2 transition ease-in-out border-zinc-300 hover:border-green-400 dark:border-zinc-600 dark:hover:border-green-400 duration-300">
+        <div className="mt-8 h-60 flex flex-col w-1/3 p-6 border-solid border-2 transition ease-in-out border-zinc-300 hover:border-red-400 dark:border-zinc-800 dark:hover:border-red-400 duration-300">
           <div className="flex gap-x-2 align-middle">
-            <Backend />
+            <div className="text-red-400">
+              <Backend />
+            </div>
             <h1 className="text-2xl font-semibold">Backend</h1>
           </div>
           <div className="pt-4">

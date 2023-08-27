@@ -14,24 +14,17 @@ export default function MainIllustration() {
     setIsMounted(true);
   }, []);
 
-  if (isMounted && enabled)
-    return enabled ? (
-      <Image
-        src={"/images/renato_during_night.svg"}
-        alt="Renato during the night"
-        width={487}
-        height={350}
-      />
-    ) : (
-      <>okok</>
-    );
-  else
-    return (
-      <Image
-        src={"/images/renato_during_day.svg"}
-        alt="Renato during the day"
-        width={487}
-        height={350}
-      />
-    );
+  return (
+    <Image
+      src={
+        isMounted && enabled
+          ? "/images/renato_during_night.svg"
+          : "/images/renato_during_day.svg"
+      }
+      alt="Renato during the night"
+      width={487}
+      height={350}
+      className="transition-all"
+    />
+  );
 }

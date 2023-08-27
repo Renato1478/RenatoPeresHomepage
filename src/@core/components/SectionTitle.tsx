@@ -16,7 +16,7 @@ export default function SectionTitle({ text, position = "start" }: Props) {
       <hr
         className={`${
           position === "center" ? "ml-auto" : null
-        } w-4 border-t-4 border-t-purple-400`}
+        } w-4 border-t-4 border-t-purple-400 dark:border-t-purple-600`}
       />
     </div>
   );

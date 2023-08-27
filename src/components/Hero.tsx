@@ -11,15 +11,15 @@ export default function Hero() {
       <div className="flex flex-col align-middle justify-center max-w-lg gap-y-4">
         <div className="text-3xl font-bold">
           Helping <span className="text-red-400">ideas</span> turn into{" "}
-          <span className="text-purple-600 dark:text-purple-500">reality</span> in a modern and
-          beatiful way
+          <span className="text-purple-600 dark:text-purple-500">reality</span>{" "}
+          in a modern and beatiful way
         </div>
         <div className="mt-2 dark:text-zinc-400">
           Professional skills that will put a star in your project.
         </div>
         <div className="mt-2">
-          <SpecialButton href="#">
-            <i>Whats yours?</i>
+          <SpecialButton href="mailto:renatoperesdesouza@hotmail.com">
+            <i>Let's talk</i>
           </SpecialButton>
         </div>
       </div>

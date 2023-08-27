@@ -86,7 +86,7 @@ export default function Header() {
   ];
 
   return (
-    <nav className="w-full fixed backdrop-blur-md bg-white bg-opacity-75 dark:bg-opacity-5 z-50">
+    <nav className="w-full fixed backdrop-blur-md bg-white bg-opacity-75 dark:bg-opacity-5 z-50 dark:bg-zinc-400">
       <div className="wrapper flex justify-between py-4 m-auto">
         <div className="text-2xl">
           Renato{" "}
@@ -119,7 +119,7 @@ export default function Header() {
             </li>
           </ul>
           <div
-            className="absolute w-4 h-1/6 rounded-full bg-purple-400 transition-all"
+            className="absolute w-4 h-1.5 rounded-full bg-purple-400 transition-all"
             style={{ left: activeSessionIndicatorXPosition }}
           />
         </div>

@@ -23,20 +23,23 @@ export default function Profile() {
         />
         <div className="flex flex-col gap-y-2">
           <div className="text-3xl">
-            Renato <span className="text-purple-600 dark:text-purple-500 font-semibold">Peres</span>
+            Renato{" "}
+            <span className="text-purple-600 dark:text-purple-500 font-semibold">
+              Peres
+            </span>
           </div>
           <span>Cyber Magician (Designer / Developer)</span>
           <div className="flex pt-4 gap-x-2">
-            <SocialMediaButton>
+            <SocialMediaButton href="https://github.com/Renato1478">
               <GitHubIcon />
             </SocialMediaButton>
-            <SocialMediaButton>
+            <SocialMediaButton href="https://www.behance.net/renatosouza32">
               <BehanceIcon />
             </SocialMediaButton>
-            <SocialMediaButton>
+            <SocialMediaButton href="https://www.linkedin.com/in/renato-peres-401137179/">
               <LinkedInIcon />
             </SocialMediaButton>
-            <SocialMediaButton>
+            <SocialMediaButton href="https://discord.gg/USufuNnp">
               <DiscordIcon />
             </SocialMediaButton>
           </div>
