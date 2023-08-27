@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Game() {
-  return <div className="wrapper pt-32">Ok</div>;
+  return <div className="section wrapper pt-32">Ok</div>;
 }

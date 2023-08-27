@@ -3,8 +3,6 @@ import Collaborations from "./components/Collaborations";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Game from "./components/Game";
-import Profile from "./components/Profile";
 import WhatIDo from "./components/WhatIDo";
 import Experiences from "./components/Experiences";
 
@@ -34,7 +32,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Profile />
       <AboutMe />
       <WhatIDo />
       <Collaborations />

@@ -7,15 +7,15 @@ interface Props
     ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {
-  active: boolean;
+  isActive: boolean;
 }
 
-export default function PaginationButton(props: Props) {
+export default function PaginationButton({ isActive, ...props }: Props) {
   return (
     <button
       {...props}
       className={`px-3 py-1 border-solid border-2 ${
-        props.active ? "border-purple-400" : "border-gray-300"
+        isActive ? "border-purple-400" : "border-gray-300"
       } hover:border-purple-400 transition ease-in-out duration-300`}
     >
       {props.children}

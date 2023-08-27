@@ -92,7 +92,7 @@ export default function Collaborations() {
   // }, 6000);
 
   return (
-    <div id="s-collaborations" className="wrapper pt-32">
+    <div id="s-collaborations" className="section wrapper pt-32">
       <SectionTitle text="Collaborations" />
       <div className="pt-16">
         {/* Details */}
@@ -104,9 +104,7 @@ export default function Collaborations() {
           />
           <div className="pl-8">
             <div className="flex align-middle justify-between">
-              <h2 className="text-2xl">
-                {collaborationToShow.title}
-              </h2>
+              <h2 className="text-2xl">{collaborationToShow.title}</h2>
               <div className="flex align-middle gap-x-8">
                 <CustomLink
                   href={collaborationToShow.company.website}
@@ -139,10 +137,11 @@ export default function Collaborations() {
           {collaborations.map((collaboration, i) => {
             return (
               <PaginationButton
+                key={collaboration.id}
                 onClick={() => {
                   setCollaborationToShow(collaboration);
                 }}
-                active={collaboration.id === collaborationToShow.id}
+                isActive={collaboration.id === collaborationToShow.id}
               >
                 {i + 1}
               </PaginationButton>

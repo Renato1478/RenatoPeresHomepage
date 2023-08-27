@@ -3,8 +3,14 @@
 import React, { useState } from "react";
 import SectionTitle from "../@core/components/SectionTitle";
 import Link from "next/link";
-import { ArrowTopRightIcon, BookOpenIcon, BriefCaseIcon, MapMarkerIcon } from "../@core/components/icons";
+import {
+  ArrowTopRightIcon,
+  BookOpenIcon,
+  BriefCaseIcon,
+  MapMarkerIcon,
+} from "../@core/components/icons";
 import CustomLink from "../@core/components/CustomLink";
+import exp from "constants";
 
 type ExperienceProps = {
   id: number;
@@ -75,7 +81,7 @@ export default function Experiences() {
   );
 
   return (
-    <div id="s-experiences" className="wrapper pt-32">
+    <div id="s-experiences" className="section wrapper pt-32">
       <SectionTitle text="Experiences" />
       <div className="flex pt-16 h-fit">
         {/* Nav */}
@@ -87,6 +93,7 @@ export default function Experiences() {
             .filter((exp) => !exp.education)
             .map((experience, i) => (
               <div
+                key={experience.id}
                 className={`px-4 py-4 cursor-pointer duration-300 ease-in-out border-l-4 ${
                   experienceToShow.id === experience.id
                     ? "border-purple-400"
@@ -107,6 +114,7 @@ export default function Experiences() {
             .filter((exp) => exp.education)
             .map((experience, i) => (
               <div
+                key={experience.id}
                 className={`px-4 py-4 cursor-pointer transition duration-300 ease-in-out border-l-4 ${
                   experienceToShow.id === experience.id
                     ? "border-purple-400"
@@ -122,6 +130,7 @@ export default function Experiences() {
         </div>
         {/* Container */}
         <div className="pl-8 w-full">
+          {/* Header */}
           <div className="flex align-middle justify-between">
             <h2 className="text-2xl">{experienceToShow.title}</h2>
             <div className="flex items-center text-gray-500">
