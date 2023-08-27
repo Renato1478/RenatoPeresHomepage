@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Header() {
   const [activeSessionIndicatorXPosition, setActiveSessionIndicatorXPosition] =
-    useState<number>(14);
+    useState<number>(14.5);
 
   const updateActiveSessionIndicator = (sessionId: string) => {
     const navLink = window.document.getElementById(`link-${sessionId}`);
@@ -36,6 +36,23 @@ export default function Header() {
       });
     };
   }, []);
+
+  const onClickSectionLink = (e: any) => {
+    e.preventDefault();
+
+    const sectionToScroll = window.document.getElementById(
+      e.target.getAttribute("href").split("#")[1]
+    );
+
+    if (sectionToScroll) {
+      let targetYPosition = sectionToScroll.offsetTop - 50;
+
+      if (sectionToScroll.getAttribute("id") === "s-aboutme")
+        targetYPosition -= 200;
+
+      window.scrollTo({ top: targetYPosition, behavior: "smooth" });
+    }
+  };
 
   const sectionLinks = [
     {
@@ -75,7 +92,11 @@ export default function Header() {
           <ul className="flex gap-x-8 items-center">
             {sectionLinks.map((sectionLink) => (
               <li key={sectionLink.id}>
-                <Link id={sectionLink.id} href={sectionLink.href}>
+                <Link
+                  id={sectionLink.id}
+                  href={sectionLink.href}
+                  onClick={onClickSectionLink}
+                >
                   {sectionLink.title}
                 </Link>
               </li>
