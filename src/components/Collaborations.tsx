@@ -100,7 +100,7 @@ export default function Collaborations() {
           <img
             src={collaborationToShow.image}
             alt={collaborationToShow.title}
-            className="h-full"
+            className="h-full box-content border-2 border-zinc-400 dark:border-zinc-800"
           />
           <div className="pl-8">
             <div className="flex align-middle justify-between">
@@ -120,12 +120,12 @@ export default function Collaborations() {
               </div>
             </div>
             <div className="pt-6">
-              <span className="text-gray-500">
+              <span className="text-zinc-500">
                 {collaborationToShow.description}
               </span>
               <div className="pt-4">
-                <span className="font-semibold">My collaboration:</span>{" "}
-                <span className="text-gray-500">
+                <span>My collaboration:</span>{" "}
+                <span className="text-zinc-500">
                   {collaborationToShow.role_description}
                 </span>
               </div>

@@ -318,7 +318,7 @@ export const DesignIcon = () => (
   >
     <path
       d="M18 29.3303L28.5 18.8303L33 23.3303L22.5 33.8303L18 29.3303Z"
-      className="stroke-purple-600"
+      stroke="currentColor"
       strokeOpacity="0.4"
       strokeWidth="1.5"
       strokeLinecap="round"
@@ -326,7 +326,7 @@ export const DesignIcon = () => (
     />
     <path
       d="M27 20.3303L24.75 9.08032L3 3.83032L8.25 25.5803L19.5 27.8303L27 20.3303Z"
-      className="stroke-purple-600"
+      stroke="currentColor"
       strokeOpacity="0.4"
       strokeWidth="1.5"
       strokeLinecap="round"
@@ -334,7 +334,7 @@ export const DesignIcon = () => (
     />
     <path
       d="M3 3.83032L14.379 15.2093"
-      className="stroke-purple-600"
+      stroke="currentColor"
       strokeOpacity="0.4"
       strokeWidth="1.5"
       strokeLinecap="round"
@@ -342,7 +342,7 @@ export const DesignIcon = () => (
     />
     <path
       d="M16.5 20.3303C18.1569 20.3303 19.5 18.9872 19.5 17.3303C19.5 15.6735 18.1569 14.3303 16.5 14.3303C14.8431 14.3303 13.5 15.6735 13.5 17.3303C13.5 18.9872 14.8431 20.3303 16.5 20.3303Z"
-      className="stroke-purple-600"
+      stroke="currentColor"
       strokeOpacity="0.4"
       strokeWidth="1.5"
       strokeLinecap="round"
@@ -415,5 +415,45 @@ export const Backend = () => (
       strokeLinecap="round"
       strokeLinejoin="round"
     />
+  </svg>
+);
+
+export const MoonIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 27 28"
+    fill="none"
+  >
+    <path
+      d="M23.6458 15.1332C23.4699 17.0364 22.7557 18.8501 21.5866 20.3621C20.4175 21.8742 18.842 23.022 17.0445 23.6713C15.2469 24.3206 13.3015 24.4445 11.4361 24.0286C9.5706 23.6126 7.86219 22.674 6.51072 21.3225C5.15925 19.9711 4.22062 18.2626 3.80467 16.3972C3.38871 14.5317 3.51264 12.5864 4.16194 10.7888C4.81125 8.99121 5.95907 7.4157 7.47111 6.24665C8.98315 5.0776 10.7969 4.36335 12.7 4.18747C11.5858 5.69491 11.0496 7.5522 11.189 9.42155C11.3284 11.2909 12.1341 13.0481 13.4596 14.3736C14.7851 15.6991 16.5424 16.5048 18.4117 16.6442C20.2811 16.7837 22.1383 16.2475 23.6458 15.1332Z"
+      fill="white"
+    />
+  </svg>
+);
+
+export const SunIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="feather feather-sun"
+  >
+    <circle cx="12" cy="12" r="5" />
+    <line x1="12" y1="1" x2="12" y2="3" />
+    <line x1="12" y1="21" x2="12" y2="23" />
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+    <line x1="1" y1="12" x2="3" y2="12" />
+    <line x1="21" y1="12" x2="23" y2="12" />
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
   </svg>
 );

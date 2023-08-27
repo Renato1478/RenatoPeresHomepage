@@ -9,7 +9,7 @@ export default function CustomLink(props: React.ComponentProps<typeof Link>) {
     <Link
       {...props}
       className={classNames(
-        "flex align-middle gap-x-1 text-purple-600 hover:text-purple-400 transition-all",
+        "flex align-middle gap-x-1 text-purple-600 hover:text-purple-400 dark:text-purple-500 dark:hover:text-purple-300 transition-all",
         props.className
       )}
     >

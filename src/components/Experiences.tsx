@@ -83,8 +83,8 @@ export default function Experiences() {
       <SectionTitle text="Experiences" />
       <div className="flex pt-16 h-fit">
         {/* Nav */}
-        <div className="w-64 min-w-64 border-0 bg-gray-100">
-          <div className="flex gap-x-2 p-2 px-3 text-gray-500 bg-gradient-to-r from-gray-200 from-80% to-purple-200">
+        <div className="w-64 min-w-64 border-0 bg-zinc-100">
+          <div className="flex gap-x-2 p-2 px-3 text-zinc-500 bg-gradient-to-r from-zinc-200 from-80% to-purple-200 dark:from-zinc-800 dark:to-purple-950">
             <BriefCaseIcon width={20} /> Work
           </div>
           {experiences
@@ -92,7 +92,7 @@ export default function Experiences() {
             .map((experience, i) => (
               <div
                 key={experience.id}
-                className={`px-4 py-4 cursor-pointer duration-300 ease-in-out border-l-4 ${
+                className={`px-4 py-4 cursor-pointer duration-300 ease-in-out border-l-4 dark:bg-zinc-900 ${
                   experienceToShow.id === experience.id
                     ? "border-purple-400"
                     : "border-transparent"
@@ -104,7 +104,7 @@ export default function Experiences() {
                 {experience.company.name}
               </div>
             ))}
-          <div className="flex gap-x-2 p-2 px-3 text-gray-500 bg-gradient-to-r from-gray-200 from-80% to-red-200">
+          <div className="flex gap-x-2 p-2 px-3 text-zinc-500 bg-gradient-to-r from-zinc-200 from-80% to-red-200 dark:from-zinc-800 dark:to-red-950">
             <BookOpenIcon width={20} />
             Education
           </div>
@@ -113,7 +113,7 @@ export default function Experiences() {
             .map((experience, i) => (
               <div
                 key={experience.id}
-                className={`px-4 py-4 cursor-pointer transition duration-300 ease-in-out border-l-4 ${
+                className={`px-4 py-4 cursor-pointer duration-300 ease-in-out border-l-4 dark:bg-zinc-900 ${
                   experienceToShow.id === experience.id
                     ? "border-purple-400"
                     : "border-transparent"
@@ -131,7 +131,7 @@ export default function Experiences() {
           {/* Header */}
           <div className="flex align-middle justify-between">
             <h2 className="text-2xl">{experienceToShow.title}</h2>
-            <div className="flex items-center text-gray-500">
+            <div className="flex items-center text-zinc-500">
               {experienceToShow.beginning} - {experienceToShow.end || "Present"}
             </div>
           </div>
@@ -145,13 +145,13 @@ export default function Experiences() {
                 <ArrowTopRightIcon />
                 {experienceToShow.company.name}
               </CustomLink>
-              <span className="flex items-center gap-x-1 text-gray-600">
+              <span className="flex items-center gap-x-1 text-zinc-600">
                 <MapMarkerIcon />
                 {experienceToShow.company.place}
               </span>
             </div>
             <div className="pt-6">
-              <span className="text-gray-500">
+              <span className="text-zinc-500">
                 {experienceToShow.description}
               </span>
             </div>

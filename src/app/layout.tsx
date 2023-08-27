@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { useEffect } from "react";
+import { DarkModeContextProvider } from "@/hooks/useDarkMode";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,8 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={inter.className + " scroll-smooth"}>{children}</body>
-    </html>
+    <DarkModeContextProvider>
+      <html lang="en" className="scroll-smooth">
+        <body className={inter.className + " scroll-smooth"}>{children}</body>
+      </html>
+    </DarkModeContextProvider>
   );
 }
