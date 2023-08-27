@@ -1,13 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function Header() {
   const [activeSessionIndicatorXPosition, setActiveSessionIndicatorXPosition] =
-    useState<number>(91.5);
-
-  const sections = window.document.querySelectorAll(".section");
+    useState<number>(14);
 
   const updateActiveSessionIndicator = (sessionId: string) => {
     const navLink = window.document.getElementById(`link-${sessionId}`);
@@ -17,23 +15,27 @@ export default function Header() {
     }
   };
 
-  window.onscroll = () => {
-    sections.forEach((sec: any) => {
-      const scrollY = window.scrollY;
-      const sectionY = sec.offsetTop;
-      const sectionHeight = sec.offsetHeight;
-      const id = sec.getAttribute("id");
+  useEffect(() => {
+    const sections = window.document.querySelectorAll(".section");
 
-      if (
-        scrollY >= sectionY - sectionHeight / 1.5 - 100 &&
-        scrollY < scrollY + sectionHeight
-      ) {
-        if (id) {
-          updateActiveSessionIndicator(id);
+    window.onscroll = () => {
+      sections.forEach((sec: any) => {
+        const scrollY = window.scrollY;
+        const sectionY = sec.offsetTop;
+        const sectionHeight = sec.offsetHeight;
+        const id = sec.getAttribute("id");
+
+        if (
+          scrollY >= sectionY - sectionHeight / 1.5 - 100 &&
+          scrollY < scrollY + sectionHeight
+        ) {
+          if (id) {
+            updateActiveSessionIndicator(id);
+          }
         }
-      }
-    });
-  };
+      });
+    };
+  }, []);
 
   const sectionLinks = [
     {
@@ -79,7 +81,7 @@ export default function Header() {
               </li>
             ))}
             <li>
-              <button className="rounded-md p-2 bg-purple-600 hover:bg-purple-700 transition ease-in-out duration-300">
+              <button className="rounded-md p-2 bg-gradient-to-b bg-purple-600 hover:from-purple-600 hover:to-red-400 transition ease-in-out duration-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
