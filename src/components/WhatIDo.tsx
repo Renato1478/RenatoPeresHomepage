@@ -58,7 +58,7 @@ export default function WhatIDo() {
           </div>
           <div className="pt-4">
             <h2 className="text-zinc-700 dark:text-white">
-              Some tools I'm used to:
+              Some tools I&apos;m used to:
             </h2>
             <ul className="space-y-1 text-zinc-500 dark:text-zinc-500 list-disc list-inside">
               <li>NodeJS</li>

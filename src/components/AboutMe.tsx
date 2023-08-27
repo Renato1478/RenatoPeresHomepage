@@ -61,9 +61,9 @@ export default function Profile() {
       <div className="wrapper pt-12">
         <SectionTitle text="About me" />
         <div className="pt-8 dark:text-zinc-400">
-          My name is Renato, I'm 23 years old. I like running, hiking, gaming
+          My name is Renato, I&apos;m 23 years old. I like running, hiking, gaming
           and, of course...{" "}
-          <span className="text-red-400 font-bold">CODING!</span> I've been
+          <span className="text-red-400 font-bold">CODING!</span> I&apos;ve been
           working in web development for over 3 years and have collaborated on
           projects that impacted more than 15000+ users across Brazil, ranging
           from promising startups to large companies.{" "}

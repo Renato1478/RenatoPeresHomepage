@@ -39,7 +39,6 @@ interface DarkModeValuesProps {
   setEnabled: (value: boolean) => void;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const defaultProvider: DarkModeValuesProps = {
   enabled: true,
   setEnabled: (val) => null,

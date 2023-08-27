@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
         <div className="mt-2">
           <SpecialButton href="mailto:renatoperesdesouza@hotmail.com">
-            <i>Let's talk</i>
+            <i>Let&apos;s talk</i>
           </SpecialButton>
         </div>
       </div>
