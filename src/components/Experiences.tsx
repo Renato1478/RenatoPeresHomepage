@@ -104,7 +104,7 @@ export default function Experiences() {
                 {experience.company.name}
               </div>
             ))}
-          <div className="flex gap-x-2 p-2 px-3 text-zinc-500 bg-gradient-to-r from-zinc-200 from-70% to-red-200 dark:from-[#1F1435] dark:to-red-950">
+          <div className="flex gap-x-2 p-2 px-3 text-zinc-500 bg-gradient-to-r from-zinc-200 from-60% to-red-200 dark:from-[#1F1435] dark:to-red-950">
             <BookOpenIcon width={20} />
             Education
           </div>

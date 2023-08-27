@@ -18,8 +18,8 @@ export default function MainIllustration() {
     <Image
       src={
         isMounted && enabled
-          ? "/images/renato_during_night.svg"
-          : "/images/renato_during_day.svg"
+          ? "/images/renato_during_the_night.svg"
+          : "/images/renato_during_the_day.svg"
       }
       alt="Renato during the night"
       width={487}
