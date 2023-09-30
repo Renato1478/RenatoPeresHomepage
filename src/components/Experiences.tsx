@@ -83,7 +83,7 @@ export default function Experiences() {
       <SectionTitle text="Experiences" />
       <div className="flex pt-16 max-md:pt-12 max-md:flex-col h-fit">
         {/* Nav */}
-        <div className="w-64 max-md:w-full min-w-64 border-0 bg-slate-100">
+        <div className="w-64 max-md:w-full min-w-64 border-0 rounded-md overflow-hidden">
           <div className="flex gap-x-2 p-2 px-3 text-slate-400 bg-gradient-to-r from-slate-200 from-80% to-purple-200 dark:from-[#1F1435] dark:to-purple-950">
             <BriefCaseIcon width={20} /> Work
           </div>
@@ -92,7 +92,7 @@ export default function Experiences() {
             .map((experience, i) => (
               <div
                 key={experience.id}
-                className={`px-4 py-4 cursor-pointer duration-300 ease-in-out border-l-4 dark:bg-[#150e24] ${
+                className={`px-4 py-4 cursor-pointer duration-300 ease-in-out border-l-4 bg-slate-50 dark:bg-opacity-5 ${
                   experienceToShow.id === experience.id
                     ? "border-purple-400"
                     : "border-transparent"
@@ -113,7 +113,7 @@ export default function Experiences() {
             .map((experience, i) => (
               <div
                 key={experience.id}
-                className={`px-4 py-4 cursor-pointer duration-300 ease-in-out border-l-4 dark:bg-[#150e24] ${
+                className={`px-4 py-4 cursor-pointer duration-300 ease-in-out border-l-4 bg-slate-50 dark:bg-opacity-5 ${
                   experienceToShow.id === experience.id
                     ? "border-purple-400"
                     : "border-transparent"
