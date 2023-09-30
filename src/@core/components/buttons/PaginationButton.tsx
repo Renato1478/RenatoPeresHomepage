@@ -14,7 +14,7 @@ export default function PaginationButton({ isActive, ...props }: Props) {
   return (
     <button
       {...props}
-      className={`px-3 py-1 rounded-sm dark:text-zinc-400 bg-zinc-50 dark:bg-zinc-50 dark:bg-opacity-5 hover:text-purple-400 dark:hover:text-purple-600 transition ease-in-out duration-300 ${
+      className={`px-3 py-1 rounded-sm dark:text-slate-400 bg-slate-50 dark:bg-slate-50 dark:bg-opacity-5 hover:text-purple-400 dark:hover:text-purple-600 transition ease-in-out duration-300 ${
         isActive ? "text-purple-400 dark:text-purple-600" : null
       } `}
     >

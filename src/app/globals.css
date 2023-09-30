@@ -23,7 +23,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: theme('colors.zinc.950');
+  background: theme('colors.slate.950');
 }
 
 /* Handle */

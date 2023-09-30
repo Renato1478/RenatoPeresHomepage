@@ -60,7 +60,7 @@ export default function Profile() {
       {/* Content */}
       <div className="wrapper pt-12">
         <SectionTitle text="About me" />
-        <div className="pt-8 dark:text-zinc-400">
+        <div className="pt-8 dark:text-slate-400">
           My name is Renato, I&apos;m 23 years old. I like running, hiking, gaming
           and, of course...{" "}
           <span className="text-red-400 font-bold">CODING!</span> I&apos;ve been

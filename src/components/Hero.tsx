@@ -14,7 +14,7 @@ export default function Hero() {
           <span className="text-purple-600 dark:text-purple-500">reality</span>{" "}
           in a modern and beatiful way
         </div>
-        <div className="mt-2 dark:text-zinc-400">
+        <div className="mt-2 dark:text-slate-400">
           Professional skills that will put a star in your project.
         </div>
         <div className="mt-2">
