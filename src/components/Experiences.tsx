@@ -75,7 +75,7 @@ const experiences: ExperienceProps[] = [
 
 export default function Experiences() {
   const [experienceToShow, setExperienceToShow] = useState<ExperienceProps>(
-    experiences[1]
+    experiences[0]
   );
 
   return (
@@ -84,7 +84,7 @@ export default function Experiences() {
       <div className="flex pt-16 max-md:pt-12 max-md:flex-col h-fit">
         {/* Nav */}
         <div className="w-64 max-md:w-full min-w-64 border-0 bg-zinc-100">
-          <div className="flex gap-x-2 p-2 px-3 text-zinc-500 bg-gradient-to-r from-zinc-200 from-80% to-purple-200 dark:from-[#1F1435] dark:to-purple-950">
+          <div className="flex gap-x-2 p-2 px-3 text-zinc-400 bg-gradient-to-r from-zinc-200 from-80% to-purple-200 dark:from-[#1F1435] dark:to-purple-950">
             <BriefCaseIcon width={20} /> Work
           </div>
           {experiences
@@ -104,7 +104,7 @@ export default function Experiences() {
                 {experience.company.name}
               </div>
             ))}
-          <div className="flex gap-x-2 p-2 px-3 text-zinc-500 bg-gradient-to-r from-zinc-200 from-60% to-red-200 dark:from-[#1F1435] dark:to-red-950">
+          <div className="flex gap-x-2 p-2 px-3 text-zinc-400 bg-gradient-to-r from-zinc-200 from-60% to-red-200 dark:from-[#1F1435] dark:to-red-950">
             <BookOpenIcon width={20} />
             Education
           </div>
@@ -131,7 +131,7 @@ export default function Experiences() {
           {/* Header */}
           <div className="flex max-md:flex-col max-md:gap-y-4 align-middle justify-between">
             <h2 className="text-2xl">{experienceToShow.title}</h2>
-            <div className="flex items-center text-zinc-500">
+            <div className="flex items-center text-zinc-400">
               {experienceToShow.beginning} - {experienceToShow.end || "Present"}
             </div>
           </div>
@@ -145,13 +145,13 @@ export default function Experiences() {
                 <ArrowTopRightIcon />
                 {experienceToShow.company.name}
               </CustomLink>
-              <span className="flex items-center gap-x-1 text-zinc-600">
+              <span className="flex items-center gap-x-1 text-zinc-400">
                 <MapMarkerIcon />
                 {experienceToShow.company.place}
               </span>
             </div>
             <div className="pt-6">
-              <span className="text-zinc-500">
+              <span className="dark:text-zinc-400">
                 {experienceToShow.description}
               </span>
             </div>

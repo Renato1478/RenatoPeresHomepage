@@ -94,7 +94,23 @@ export default function Collaborations() {
   return (
     <div id="s-collaborations" className="section wrapper pt-32 max-md:pt-24">
       <SectionTitle text="Collaborations" />
-      <div className="pt-16 max-md:pt-12">
+      <div className="pt-12 max-md:pt-12">
+        {/* Pagination */}
+        <div className="flex gap-x-2 pb-6">
+          {collaborations.map((collaboration, i) => {
+            return (
+              <PaginationButton
+                key={collaboration.id}
+                onClick={() => {
+                  setCollaborationToShow(collaboration);
+                }}
+                isActive={collaboration.id === collaborationToShow.id}
+              >
+                {i + 1}
+              </PaginationButton>
+            );
+          })}
+        </div>
         {/* Details */}
         <div className="h-60 max-md:h-fit flex max-md:flex-col">
           <img
@@ -120,33 +136,17 @@ export default function Collaborations() {
               </div>
             </div>
             <div className="pt-6">
-              <span className="text-zinc-500">
+              <span className="dark:text-zinc-400">
                 {collaborationToShow.description}
               </span>
               <div className="pt-4">
                 <span>My collaboration:</span>{" "}
-                <span className="text-zinc-500">
+                <span className="text-zinc-400 dark:text-zinc-400">
                   {collaborationToShow.role_description}
                 </span>
               </div>
             </div>
           </div>
-        </div>
-        {/* Pagination */}
-        <div className="flex gap-x-2 pt-6">
-          {collaborations.map((collaboration, i) => {
-            return (
-              <PaginationButton
-                key={collaboration.id}
-                onClick={() => {
-                  setCollaborationToShow(collaboration);
-                }}
-                isActive={collaboration.id === collaborationToShow.id}
-              >
-                {i + 1}
-              </PaginationButton>
-            );
-          })}
         </div>
       </div>
     </div>

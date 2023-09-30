@@ -17,10 +17,10 @@ export default function WhatIDo() {
             <h1 className="text-2xl font-semibold dark:text-white">Design</h1>
           </div>
           <div className="pt-4">
-            <h2 className="text-zinc-700 dark:text-white">
+            <h2 className="text-zinc-400 dark:text-zinc-400">
               Things I enjoy designing:
             </h2>
-            <ul className="space-y-1 pt-3 text-zinc-500 dark:text-zinc-500 list-disc list-inside">
+            <ul className="space-y-1 pt-3 text-zinc-600 dark:text-white list-disc list-inside">
               <li>Apps</li>
               <li>Websites</li>
               <li>Logos</li>
@@ -37,10 +37,10 @@ export default function WhatIDo() {
             <h1 className="text-2xl font-semibold">Frontend</h1>
           </div>
           <div className="pt-4">
-            <h2 className="text-zinc-700 dark:text-white">
+            <h2 className="text-zinc-400 dark:text-zinc-400">
               Frameworks I usually work with:
             </h2>
-            <ul className="space-y-1 pt-3 text-zinc-500 dark:text-zinc-500 list-disc list-inside">
+            <ul className="space-y-1 pt-3 text-zinc-600 dark:text-white list-disc list-inside">
               <li>Next.js</li>
               <li>Three.js / WebGL</li>
               <li>React Native</li>
@@ -57,10 +57,10 @@ export default function WhatIDo() {
             <h1 className="text-2xl font-semibold">Backend</h1>
           </div>
           <div className="pt-4">
-            <h2 className="text-zinc-700 dark:text-white">
+            <h2 className="text-zinc-400 dark:text-zinc-400">
               Some tools I&apos;m used to:
             </h2>
-            <ul className="space-y-1 pt-3 text-zinc-500 dark:text-zinc-500 list-disc list-inside">
+            <ul className="space-y-1 pt-3 text-zinc-600 dark:text-white list-disc list-inside">
               <li>NodeJS</li>
               <li>Laravel</li>
               <li>PostgresSQL</li>
