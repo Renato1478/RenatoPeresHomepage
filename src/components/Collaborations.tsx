@@ -100,7 +100,7 @@ export default function Collaborations() {
           <img
             src={collaborationToShow.image}
             alt={collaborationToShow.title}
-            className="h-full box-content border-2 border-zinc-400 dark:border-zinc-800"
+            className="h-full box-content border-2 border-zinc-50 dark:border-zinc-800"
           />
           <div className="pl-8 max-md:pl-0 max-md:pt-6">
             <div className="flex align-middle justify-between max-md:flex-col max-md:gap-y-4">
