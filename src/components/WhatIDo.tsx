@@ -9,7 +9,7 @@ export default function WhatIDo() {
       {/* Card List */}
       <div className="flex max-md:flex-col pt-12 justify-center gap-x-12">
         {/* Design */}
-        <div className="mt-8 max-md:mt-0 h-60 flex flex-col w-1/3 max-md:w-full p-6 rounded-md bg-zinc-100 dark:bg-opacity-5">
+        <div className="mt-8 max-md:mt-0 h-60 flex flex-col w-1/3 max-md:w-full p-6 rounded-md bg-zinc-50 dark:bg-opacity-5">
           <div className="flex gap-x-2 align-middle">
             <div className="text-purple-600">
               <DesignIcon />
@@ -29,7 +29,7 @@ export default function WhatIDo() {
           </div>
         </div>
         {/* Frontend */}
-        <div className="flex h-60 max-md:mt-4 flex-col w-1/3 max-md:w-full p-6 rounded-md bg-zinc-100 dark:bg-opacity-5">
+        <div className="flex h-60 max-md:mt-4 flex-col w-1/3 max-md:w-full p-6 rounded-md bg-zinc-50 dark:bg-opacity-5">
           <div className="flex gap-x-2 align-middle">
             <div className="text-violet-600">
               <FrontendIcon />
@@ -49,7 +49,7 @@ export default function WhatIDo() {
           </div>
         </div>
         {/* Backend */}
-        <div className="mt-8 max-md:mt-4 h-60 flex flex-col w-1/3 max-md:w-full p-6 rounded-md bg-zinc-100 dark:bg-opacity-5">
+        <div className="mt-8 max-md:mt-4 h-60 flex flex-col w-1/3 max-md:w-full p-6 rounded-md bg-zinc-50 dark:bg-opacity-5">
           <div className="flex gap-x-2 align-middle">
             <div className="text-red-400">
               <Backend />

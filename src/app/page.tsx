@@ -9,8 +9,7 @@ import Experiences from "../components/Experiences";
 export default function Home() {
   return (
     <main
-      className="text-zinc-950 bg-gradient-radial from-white to-zinc-200 dark:text-white dark:to-[#1F1435] dark:from-zinc-950 from-0% flex min-h-screen flex-col items-center my-0 mx-auto font-normal"
-      style={{ backgroundColor: "#000" }}
+      className="text-zinc-950 bg-white dark:bg-gradient-radial dark:text-white dark:to-[#1F1435] dark:from-zinc-950 dark:from-0% flex min-h-screen flex-col items-center my-0 mx-auto font-normal transition-all"
     >
       <Header />
       <Hero />

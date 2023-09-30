@@ -11,7 +11,7 @@ export default function SocialMediaButton({
     <a
       href={href}
       target="_blank"
-      className="px-3 py-2 border-solid border-2 rounded-md border-zinc-300 text-zinc-600 hover:border-purple-400 hover:text-purple-400 dark:text-purple-400 dark:border-zinc-600 hover:dark:border-purple-400 transition ease-in-out duration-300"
+      className="px-3 py-2 rounded-md dark:text-zinc-400 bg-zinc-50 dark:bg-zinc-50 dark:bg-opacity-5 hover:text-purple-400 dark:hover:text-purple-600 transition ease-in-out duration-300"
     >
       {children}
     </a>
